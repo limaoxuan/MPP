@@ -1,0 +1,5 @@
+Due to person's method equals signature is not Object type.
+We must override equals method of Object. when Employee object invoke  contains.
+the contains method will call equals method of Object. It can't invoke equals method of Employee
+So Is answer false.
+We can rewrite from Employee to Object. It does work.

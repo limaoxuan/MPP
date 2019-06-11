@@ -1,0 +1,4 @@
+Because of use HashMap. So we need to override hashCode method of class.
+And in employee class we don't override hashCode method.
+So if you use default implementation of hashCode() is  not useful.
+So Is answer false.

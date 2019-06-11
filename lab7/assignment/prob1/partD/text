@@ -1,0 +1,5 @@
+Because when we call contains method. at first we need to compare hashcode.
+if hashcode equals, and then we will compare equals method of Object.
+when we remove duplicates, we change visited property. Although hashcode of two of objects  equals,
+visited property doesn't equals.
+So Is answer false.
