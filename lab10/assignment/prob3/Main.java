@@ -7,7 +7,7 @@ import java.util.function.*;
 public class Main {
     //could return list.contains(s), but this does not generalize
 
-    public static <T, U> boolean contains(List<? extends T> list, U e, BiPredicate<T, U> pred) {
+    public static <T> boolean contains(List<? extends T> list, T e, BiPredicate<? super T, ? super T> pred) {
         for (T t : list) {
             if (t == null && e == null) {
                 return true;

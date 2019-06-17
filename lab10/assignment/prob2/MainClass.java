@@ -9,7 +9,7 @@ public class MainClass {
         System.out.println(secondSmallest);
     }
 
-    public static <T extends Comparable> T secondSmallest(List<T> list) {
+    public static <T extends Comparable<? super T>> T secondSmallest(List<? extends T> list) {
         if (list.size() < 2) {
             throw new IllegalArgumentException("size must large than 1");
         }
